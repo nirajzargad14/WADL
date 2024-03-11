@@ -18,6 +18,15 @@ export class LayoutComponent {
 
   onLogoff() {
     localStorage.removeItem('loggedUser');
-    this.router.navigateByUrl('/login')
+    this.router.navigate(['signin'])
+  }
+}
+export class DashboardComponent {
+  loggedUser: any;
+  constructor(private router: Router) {
+    const localUser = localStorage.getItem('loggedUser');
+    if(localUser != null) {
+      this.loggedUser = JSON.parse(localUser);
+    }
   }
 }

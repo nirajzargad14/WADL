@@ -1,0 +1,58 @@
+/* Styles for the navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+/* Styles for the container fluid */
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles for the navbar nav */
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the form */
+form {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for the text */
+.text-white {
+    color: #fff;
+}
+
+/* Styles for the button */
+.btn {
+    margin-left: 10px;
+}
+
+/* Styles for the p-4 div */
+.p-4 {
+    padding: 1rem !important;
+}
+
+/* Styles for the container */
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Styles for the h1 */
+h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+/* Styles for the router outlet */
+router-outlet {
+    display: block;
+}

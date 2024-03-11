@@ -1,0 +1,14 @@
+<div class="parent"> 
+    <div class="container">
+        <div class="form-container sign-up" id="sign-up-form">
+            <form>
+                <h1>Create Account</h1>
+                <input type="text" name="name" [(ngModel)]="signUpObj.name" placeholder="Name">
+                <input type="email" name="email" [(ngModel)]="signUpObj.email" placeholder="Email">
+                <input type="password" name="password" [(ngModel)]="signUpObj.password" placeholder="Password">
+                <button (click)="onRegister()">Sign Up</button>
+            </form>
+            <p>Already have an account? <button (click)="navigateToSignIn()">Sign In</button></p>
+        </div>
+    </div>
+</div>  
